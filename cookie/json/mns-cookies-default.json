@@ -1,11 +1,12 @@
 {
 	"data": {
 		"announcementBannerConfig": {
-			"text": "Due <span style=\"color:red\"> red it is </span>to an intervention at the Government Online Centre, Online Search will\n    NOT be available on <strong>Friday 12 July 2024 from 16.00 till Sunday 14 July 2024\n    at 16:00.</strong> We apologise for all inconveniences.",
+			"text": "🔥Due <span style=\"color:#3A4C57\"> dark blue it is </span>to an intervention at the Government Online Centre, Online Search will\n    NOT be available on <strong>Friday 12 July 2024 from 16.00 till Sunday 14 July 2024\n    at 16:00.</strong> We apologise for all inconveniences.",
 			"dateFrom": "2025-01-28T07:55:42.049Z",
 			"dateTo": "2025-02-15T11:30:33.049Z",
 			"enableAnimation": true
 		},
+		"primaryColor": "#3A4C57",
 		"preferences": [
 			{
 				"header": {
