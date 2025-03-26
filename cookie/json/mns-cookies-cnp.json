@@ -23,7 +23,7 @@
     "buttonConfig": {
       "headerButtons": [
         {
-          "text": "Customize", // If there is only Essential Cookies on your project, change to "Review"
+          "text": "Customize",
           "id": "customize-btn",
           "class": ["customize-btn"],
           "type": "customize"
