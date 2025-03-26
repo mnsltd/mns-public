@@ -170,7 +170,9 @@ As per the sample JSON file above, please change the following as per the requir
 
 #### Important
 Once the file is ready, upload it onto the Github repository `mns-public`. Copy the file onto the directory `cookie > json`.
-Once uploaded check the file content by clicking on the json link. Review the content and then copy the link from the browser address bar
+
+Once uploaded check the file content by clicking on the json link. Review the content and then copy the link from the browser address bar.
+
 Navigate to the following link `https://www.jsdelivr.com/github` and paste the link onto that tool to generate a CDN link. This CDN link will be used in the next step.
 
 ---
@@ -207,7 +209,7 @@ On the landing page of your application, preferably after the `<body>` tag, copy
 
 <!-- Load the mns-cookie Web Component -->
 <script src="mns-cookie.js" type="module" onerror="populateHost(getInnerHtml());"></script>
-<mns-cookie default-data-url="xxx/mns-cookies-default.json" custom-data-url="xxx/mns-cookies-xxx.json" application-name="project-xxx"> </mns-cookie>
+<mns-cookie default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json" custom-data-url="xxx/mns-cookies-xxx.json" application-name="project-xxx"> </mns-cookie>
 <!-- Event Listener for the mns-cookie component -->
 <script>
   // Listen for the 'closed' event, which is emitted when the user dismisses the cookie banner
@@ -220,12 +222,12 @@ On the landing page of your application, preferably after the `<body>` tag, copy
   });
 </script>
 ```
-
+#### Important
 Modify the following section with the correct `mns-cookies-xxx.json` and `project-xxx`:
 
 ```
 <mns-cookie
-default-data-url="xxx/mns-cookies-default.json"
+default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json"
 custom-data-url="xxx/mns-cookies-xxx.json"
 application-name="project-xxx"
 >
