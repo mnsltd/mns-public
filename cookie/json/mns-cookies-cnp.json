@@ -1,0 +1,53 @@
+{
+  "data": {
+    "announcementBannerConfig": {
+      "text": "🔥Due <span style=\"color:#22D081\"> mint green it is </span> Due to an intervention at the Government Online Centre, Online Search will NOT be available on <strong>Friday 12 July 2024 from 16.00 till Sunday 14 July 2024\n    at 16:00.</strong> We apologise for all inconveniences.",
+      "dateFrom": "2025-01-28T07:55:42.049Z",
+      "dateTo": "2025-02-09T11:30:33.049Z",
+      "textColor": "black",
+      "bgColorPrimary": "red",
+      "bgColorSecondary": "white"
+    },
+    "primaryColor": "#22D081",
+    "preferences": [
+      {
+        "header": {
+          "title": "Analytics",
+          "subtitle": "Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc."
+        },
+        "cookie": {
+          "name": "analytics"
+        }
+      }
+    ],
+    "buttonConfig": {
+      "headerButtons": [
+        {
+          "text": "Customize", // If there is only Essential Cookies on your project, change to "Review"
+          "id": "customize-btn",
+          "class": ["customize-btn"],
+          "type": "customize"
+        },
+        {
+          "text": "Reject All",
+          "id": "reject-btn",
+          "class": ["reject-btn"],
+          "type": "reject-all"
+        },
+        {
+          "text": "Accept All",
+          "id": "accept-btn",
+          "class": ["accept-btn"],
+          "type": "accept-all"
+        }
+      ],
+      "footerButtons": [
+        {
+          "text": "Save & Close",
+          "type": "save-preference",
+          "class": ["cky-btn-preferences"]
+        }
+      ]
+    }
+  }
+}
