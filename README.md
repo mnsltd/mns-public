@@ -208,7 +208,7 @@ On the landing page of your application, preferably after the `<body>` tag, copy
 </script>
 
 <!-- Load the mns-cookie Web Component -->
-<script src="mns-cookie.js" type="module" onerror="populateHost(getInnerHtml());"></script>
+<script src="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/mns-cookie.js" type="module" onerror="populateHost(getInnerHtml());"></script>
 <mns-cookie default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json" custom-data-url="xxx/mns-cookies-xxx.json" application-name="project-xxx"> </mns-cookie>
 <!-- Event Listener for the mns-cookie component -->
 <script>
