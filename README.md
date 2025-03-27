@@ -58,11 +58,14 @@ The web component has 4 main elements:
 
 ### Prepare your application-level configuration json file
 
-Create a new sample json file with the following naming convention: `mns-cookies-xxx.json` replacing the `xxx` with the name of your project.
-If there is a need to add a version, please do so.
-Copy the code from the sample json file below and paste it onto your newly created json file.\
+Create a new sample json file with the following naming convention: `mns-cookies-XXX.json` replacing the `XXX` with the name of your project.
 
-### Sample application-level JSON file (To be uploaded onto the CDN)
+If there is a need to add a version, please do so.
+
+Sample JSON file: 
+Copy the code from the sample json file below and paste it onto your newly created json file.
+
+### Sample application-level JSON file (To be modified and uploaded onto the CDN)
 
 ```json
 {
@@ -180,58 +183,71 @@ Navigate to the following link `https://www.jsdelivr.com/github` and paste the l
 On the landing page of your application, preferably after the `<body>` tag, copy and paste the following Javascript code:
 
 ```html
-<!-- Helper Functions -->
-<script>
-  // Returns the mns-cookie element from the DOM
-  const getHost = () => document.querySelector("mns-cookie");
-  // Populates the mns-cookie element with provided HTML content
-  const populateHost = (innerHtml) => {
-    getHost().innerHTML = innerHtml;
-  };
-  // Clears the fallback display by emptying the content
-  const closeHandler = () => {
-    populateHost("");
-  };
-  // Generates fallback HTML in case the mns-cookie component fails to load
-  const getInnerHtml = () => {
-    return `<div class="fallback-cookie">
-<div class="fallback-container">
-<div class="close-icon" onclick="closeHandler()">
-<svg width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10 1L9 0L5 4L1 0L0 1L4 5L0 9L1 10L5 6L9 10L10 9L6 5L10 1Z" fill="black"/>
-</svg>
-</div>
-<p class="fallback-text">This app uses cookies</p>
-</div>
-</div>`;
-  };
-</script>
+<script src="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/mns-cookie.js" type="module"></script>
 
-<!-- Load the mns-cookie Web Component -->
-<script src="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/mns-cookie.js" type="module" onerror="populateHost(getInnerHtml());"></script>
-<mns-cookie default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json" custom-data-url="xxx/mns-cookies-xxx.json" application-name="project-xxx"> </mns-cookie>
-<!-- Event Listener for the mns-cookie component -->
-<script>
-  // Listen for the 'closed' event, which is emitted when the user dismisses the cookie banner
-  getHost().addEventListener("closed", (event) => {
-    const cookieObj = event.detail;
-    // Optionally handle specific cookie preferences (e.g., analytics)
-    if (!cookieObj.analytics) {
-      // To add the Google Analytic code here
-    }
-  });
-</script>
+  <mns-cookie
+    default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json"
+    custom-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-XXX.json"
+    application-name="project-XXX"
+    version-no="1.01">
+  </mns-cookie>
+
+  <script type="text/javascript">
+    const getHost = () => document.querySelector("mns-cookie");
+    //To uncomment if Google Analytics is to be implemented. Watch out for the GTag ID
+    // const callAnalytics = () => {
+    //   if (!window.dataLayer) {
+    //     window.dataLayer = [];
+
+    //     const script = document.createElement("script");
+    //     script.src = "https://www.googletagmanager.com/gtag/js?id=G-N3JKGT381J";
+    //     script.async = true;
+    //     document.head.appendChild(script);
+
+    //     // Initialize gtag after script loads
+    //     script.onload = () => {
+    //       window.gtag = (...args) => window.dataLayer.push(args);
+    //       gtag("js", new Date());
+    //       gtag("config", "G-N3JKGT381J");
+    //     };
+    //   }
+    // };
+
+    const getCookie = (name) => {
+      return document.cookie
+        .split("; ")
+        .map((cookie) => cookie.split("="))
+        .reduce((acc, [key, value]) => (key === name ? decodeURIComponent(value) : acc), null);
+    };
+
+    let project = getCookie(document.querySelector("mns-cookie").getAttribute("application-name"));
+
+    const handleCookieConsent = (cookieData) => {
+      if (cookieData.analytics) {
+        //callAnalytics();
+      }
+    };
+
+    getHost().addEventListener("closed", (value) => {
+      const cookieObj = value.detail;
+      handleCookieConsent(cookieObj);
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (project) handleCookieConsent(JSON.parse(project));
+    });
+  </script>
 ```
 #### Important
-Modify the following section with the correct `mns-cookies-xxx.json` and `project-xxx`:
+Modify the following section with the correct `mns-cookies-XXX.json` and `project-XXX`:
 
 ```
-<mns-cookie
-default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json"
-custom-data-url="xxx/mns-cookies-xxx.json"
-application-name="project-xxx"
->
-</mns-cookie>
+  <mns-cookie
+    default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json"
+    custom-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-XXX.json"
+    application-name="project-XXX"
+    version-no="1.01">
+  </mns-cookie>
 ```
 
 Details of the mns-cookie web components attributes:
@@ -242,3 +258,5 @@ Details of the mns-cookie web components attributes:
   Specifies the application-level configuration json file for custom settings. This json file should be retrieved from CDN
 - **application-name** (mandatory):
   The name used in cookie storage to uniquely identify the application.
+- **version-no** (mandatory):
+  The version number of the mns-cookie web component.  
