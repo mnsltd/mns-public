@@ -62,8 +62,9 @@ Create a new sample json file with the following naming convention: `mns-cookies
 
 If there is a need to add a version, please do so.
 
-Sample JSON file: 
-Copy the code from the sample json file below and paste it onto your newly created json file.
+Sample JSON file: [Download](https://raw.githubusercontent.com/mnsltd/mns-public/refs/heads/develop/cookie/json/mns-cookies-sample.json)
+
+Modify the downloaded JSON file as per your project requirement.
 
 ### Sample application-level JSON file (To be modified and uploaded onto the CDN)
 
