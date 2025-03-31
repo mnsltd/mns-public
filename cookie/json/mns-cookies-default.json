@@ -56,7 +56,7 @@
       ],
       "footerButtons": [
         {
-          "text": "Save & Close",
+          "text": "Save Preferences",
           "type": "save-preference",
           "class": ["cky-btn-preferences"]
         }
