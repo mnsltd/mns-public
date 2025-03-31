@@ -8,22 +8,13 @@
       "bgColorPrimary": "red",
       "bgColorSecondary": "white"
     },
-    "primaryColor": "#22D081",
+    "primaryColor": "#388e3c",
     "preferences": [
-      {
-        "header": {
-          "title": "Analytics",
-          "subtitle": "Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc."
-        },
-        "cookie": {
-          "name": "analytics"
-        }
-      }
     ],
     "buttonConfig": {
       "headerButtons": [
         {
-          "text": "Customize",
+          "text": "Review",
           "id": "customize-btn",
           "class": ["customize-btn"],
           "type": "customize"
@@ -43,7 +34,7 @@
       ],
       "footerButtons": [
         {
-          "text": "Save & Close",
+          "text": "Save Preferences",
           "type": "save-preference",
           "class": ["cky-btn-preferences"]
         }
