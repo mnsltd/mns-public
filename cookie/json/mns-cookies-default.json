@@ -7,17 +7,6 @@
       "enableAnimation": true
     },
     "primaryColor": "#3A4C57",
-    "preferences": [
-      {
-        "header": {
-          "title": "Analytics",
-          "subtitle": "Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc."
-        },
-        "cookie": {
-          "name": "analytics"
-        }
-      }
-    ],
     "cookieHeader": {
       "expiryInDays": 60,
       "mainHeader": {
