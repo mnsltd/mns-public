@@ -195,24 +195,24 @@ On the landing page of your application, preferably after the `<body>` tag, copy
 
   <script type="text/javascript">
     const getHost = () => document.querySelector("mns-cookie");
-    //To uncomment if Google Analytics is to be implemented. Watch out for the GTag ID
-    // const callAnalytics = () => {
-    //   if (!window.dataLayer) {
-    //     window.dataLayer = [];
+    const callAnalytics = () => {
+    // if (!window.gtag) {
+    //   const script = document.createElement("script");
+    //   script.src = "https://www.googletagmanager.com/gtag/js?id=G-N3JKGT381J";
+    //   script.async = true;
+    //   document.head.appendChild(script);
 
-    //     const script = document.createElement("script");
-    //     script.src = "https://www.googletagmanager.com/gtag/js?id=G-N3JKGT381J";
-    //     script.async = true;
-    //     document.head.appendChild(script);
-
-    //     // Initialize gtag after script loads
-    //     script.onload = () => {
-    //       window.gtag = (...args) => window.dataLayer.push(args);
-    //       gtag("js", new Date());
-    //       gtag("config", "G-N3JKGT381J");
+    //   script.onload = () => {
+    //     window.dataLayer = window.dataLayer || [];
+    //     window.gtag = function () {
+    //       window.dataLayer.push(arguments);
     //     };
-    //   }
-    // };
+    //     gtag("js", new Date());
+    //     gtag("config", "G-N3JKGT381J");
+    //   };
+    // }
+  };
+
 
     const getCookie = (name) => {
       return document.cookie
@@ -225,7 +225,7 @@ On the landing page of your application, preferably after the `<body>` tag, copy
 
     const handleCookieConsent = (cookieData) => {
       if (cookieData.analytics) {
-        //callAnalytics();
+        callAnalytics();
       }
     };
 
