@@ -19,7 +19,7 @@
       }
     ],
     "cookieHeader": {
-      "expiryInDays": 90,
+      "expiryInDays": 60,
       "mainHeader": {
         "title": "This website uses Cookies.",
         "subtitle": " We have put some small files called cookies on your device to make our website work and to improve your user experience.  As a result, we may collect and process your site usage data. Let us know what cookies you allow.  We will use a cookie to save your choice. \nBefore making your choice, you can read more about our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Cookie-Policy.pdf\">Cookie Policy</a>.\n"
