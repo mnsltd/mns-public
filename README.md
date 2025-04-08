@@ -44,7 +44,9 @@ In the CSS file, add the following code at the end of the file:
 ### Announcement Banner & Cookie Popup policy
 
 Both features are available using a single web component, retrieved from the CDN. This web component should be implemented onto the landing page of the project.
-For instance, on Mastcore project, the landing page is `LoginPgStd.xsl`
+
+For instance, on Mastcore project, the landing page is `LoginPgStd.xsl` or use the `LoginPg` tag of the `mast_main.xml` file
+
 The web component has 4 main elements:
 
 1. an HTML tag namely `<mns-cookie>`
@@ -183,6 +185,8 @@ Navigate to the following link `https://www.jsdelivr.com/github` and paste the l
 
 On the landing page of your application, preferably after the `<body>` tag, copy and paste the following Javascript code:
 
+For Mastcore Projects, please add the cookie web component code onto the `mast_main.xml`. To use the `LoginPg > description` tag:
+
 ```html
 <script src="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/mns-cookie.js" type="module"></script>
 
@@ -196,9 +200,10 @@ On the landing page of your application, preferably after the `<body>` tag, copy
   <script type="text/javascript">
     const getHost = () => document.querySelector("mns-cookie");
     const callAnalytics = () => {
+      // To uncommment and fill in the appropriate g-tag property ID if google analytic should be enable. See last section of the readme for more details
     // if (!window.gtag) {
     //   const script = document.createElement("script");
-    //   script.src = "https://www.googletagmanager.com/gtag/js?id=G-N3JKGT381J";
+    //   script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX";
     //   script.async = true;
     //   document.head.appendChild(script);
 
@@ -208,11 +213,10 @@ On the landing page of your application, preferably after the `<body>` tag, copy
     //       window.dataLayer.push(arguments);
     //     };
     //     gtag("js", new Date());
-    //     gtag("config", "G-N3JKGT381J");
+    //     gtag("config", "G-XXXXXXXXXX");
     //   };
     // }
   };
-
 
     const getCookie = (name) => {
       return document.cookie
@@ -242,7 +246,7 @@ On the landing page of your application, preferably after the `<body>` tag, copy
 #### Important
 Modify the following section with the correct `mns-cookies-XXX.json` and `project-XXX`:
 
-```
+```html
   <mns-cookie
     default-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-default.json"
     custom-data-url="https://cdn.jsdelivr.net/gh/mnsltd/mns-public@develop/cookie/json/mns-cookies-XXX.json"
@@ -261,3 +265,34 @@ Details of the mns-cookie web components attributes:
   The name used in cookie storage to uniquely identify the application.
 - **version-no** (mandatory):
   The version number of the mns-cookie web component.  
+
+### For Google Analaytics
+For Google Analytics to work properly, uncomment the code inside `callAnalytics()` method.
+
+And replace the G-Tag Property ID as provided by the Google Analytic Service. Example: 
+
+```js
+const callAnalytics = () => {
+    // To uncommment and fill in the appropriate g-tag property ID if google analytic should be enable.
+     if (!window.gtag) {
+       const script = document.createElement("script");
+       script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"; // To replace the G-tag here
+       script.async = true;
+       document.head.appendChild(script);
+
+      script.onload = () => {
+         window.dataLayer = window.dataLayer || [];
+         window.gtag = function () {
+           window.dataLayer.push(arguments);
+         };
+         gtag("js", new Date());
+         gtag("config", "G-XXXXXXXXXX"); // To replace the G-tag here
+       };
+     }
+};
+```
+
+#### Important for Google Analytics
+It is recommended to implement the Google Analytics on all pages of your application. Preferably add the cookie web component onto a template page like a header, sidebar or footer page.
+
+For Mastcore Projects, please add the cookie web component code onto the `mast_main.xml`. To use the `footer` tag instead of the `LoginPg` tag
