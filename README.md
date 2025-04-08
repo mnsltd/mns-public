@@ -45,7 +45,7 @@ In the CSS file, add the following code at the end of the file:
 
 Both features are available using a single web component, retrieved from the CDN. This web component should be implemented onto the landing page of the project.
 
-For instance, on Mastcore project, the landing page is `LoginPgStd.xsl` or use the `LoginPg` tag of the `mast_main.xml` file
+For instance, on Mastcore project, the landing page is `LoginPgStd.xsl` or use the `LoginPg` tag of the `mast_main.xml` file.
 
 The web component has 4 main elements:
 
@@ -266,7 +266,7 @@ Details of the mns-cookie web components attributes:
 - **version-no** (mandatory):
   The version number of the mns-cookie web component.  
 
-### For Google Analaytics
+### For Google Analytics
 For Google Analytics to work properly, uncomment the code inside `callAnalytics()` method.
 
 And replace the G-Tag Property ID as provided by the Google Analytic Service. Example: 
@@ -295,4 +295,4 @@ const callAnalytics = () => {
 #### Important for Google Analytics
 It is recommended to implement the Google Analytics on all pages of your application. Preferably add the cookie web component onto a template page like a header, sidebar or footer page.
 
-For Mastcore Projects, please add the cookie web component code onto the `mast_main.xml`. To use the `footer` tag instead of the `LoginPg` tag
+For Mastcore Projects, please add the cookie web component code onto the `mast_main.xml`. To use the `footer` tag instead of the `LoginPg` tag.
