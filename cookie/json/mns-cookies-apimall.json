@@ -1,0 +1,42 @@
+{
+  "data": {
+    "announcementBannerConfig": {
+      "text": "",
+      "dateFrom": "2025-01-28T07:55:42.049Z",
+      "dateTo": "2025-02-09T11:30:33.049Z",
+      "textColor": "black",
+      "bgColorPrimary": "red",
+      "bgColorSecondary": "white"
+    },
+    "primaryColor": "#517634",
+    "buttonConfig": {
+      "headerButtons": [
+        {
+          "text": "Review",
+          "id": "customize-btn",
+          "class": ["customize-btn"],
+          "type": "customize"
+        },
+        {
+          "text": "Reject All",
+          "id": "reject-btn",
+          "class": ["reject-btn"],
+          "type": "reject-all"
+        },
+        {
+          "text": "Accept All",
+          "id": "accept-btn",
+          "class": ["accept-btn"],
+          "type": "accept-all"
+        }
+      ],
+      "footerButtons": [
+        {
+          "text": "Save Preferences",
+          "type": "save-preference",
+          "class": ["cky-btn-preferences"]
+        }
+      ]
+    }
+  }
+}
