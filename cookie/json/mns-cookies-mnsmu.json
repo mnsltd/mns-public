@@ -18,6 +18,15 @@
         "cookie": {
           "name": "analytics"
         }
+      },
+      {
+        "header": {
+          "title": "Marketing",
+          "subtitle": "Marketing cookies are used to track visitors across the website to allow publishers, notably Youtube and Google, to display relevant and engaging content. By enabling marketing cookies, you grant permission for track your user behaviour, collect and share certain information."
+        },
+        "cookie": {
+          "name": "marketing"
+        }
       }
     ],
     "buttonConfig": {
