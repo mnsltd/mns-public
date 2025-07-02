@@ -1,7 +1,7 @@
 {
   "data": {
     "announcementBannerConfig": {
-      "text": "🔥Due <span style=\"color:#3A4C57\"> dark blue it is </span>to an intervention at the Government Online Centre, Online Search will\n    NOT be available on <strong>Friday 12 July 2024 from 16.00 till Sunday 14 July 2024\n    at 16:00.</strong> We apologise for all inconveniences.",
+      "text": "",
       "dateFrom": "2025-01-28T07:55:42.049Z",
       "dateTo": "2025-03-15T11:30:33.049Z",
       "enableAnimation": true
@@ -11,11 +11,11 @@
       "expiryInDays": 60,
       "mainHeader": {
         "title": "This website uses Cookies.",
-        "subtitle": " We have put some small files called cookies on your device to make our website work and to improve your user experience.  As a result, we may collect and process your site usage data. Let us know what cookies you allow.  We will use a cookie to save your choice. \nBefore making your choice, you can read more about our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Cookie-Policy.pdf\">Cookie Policy</a>.\n"
+        "subtitle": "We have put some small files called cookies on your device to make our website work and to improve your user experience. As a result, we may collect and process your site usage data. Let us know what cookies you allow.  We will use a cookie to save your choice. \nBefore making your choice, you can read more about our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Cookie-Policy.pdf\">Cookie Policy</a>.\n"
       },
       "consentPreferenceHeader": {
         "title": "Customize Consent Preferences",
-        "subtitle": "By clicking on the “Save & Close” button, you consent to store on your device all the enabled cookies as described in our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Cookie-Policy.pdf\">Cookie Policy</a> for us to access and process your personal data collected. You can read more on how we process your personal data by visiting our Website <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Privacy-Notice.pdf\">Privacy Notice</a>."
+        "subtitle": "By clicking on the “Save Preferences” button, you consent to store on your device all the enabled cookies as described in our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Cookie-Policy.pdf\">Cookie Policy</a> for us to access and process your personal data collected. You can read more on how we process your personal data by visiting our Website <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Privacy-Notice.pdf\">Privacy Notice</a>."
       },
       "necessaryCookie": {
         "title": "Strictly necessary/ Essential cookies",
@@ -25,7 +25,7 @@
     "buttonConfig": {
       "headerButtons": [
         {
-          "text": "Customize",
+          "text": "Review",
           "id": "customize-btn",
           "class": ["customize-btn"],
           "type": "customize"

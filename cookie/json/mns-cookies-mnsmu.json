@@ -1,7 +1,7 @@
 {
   "data": {
     "announcementBannerConfig": {
-      "text": "🔥Due <span style=\"color:#22D081\"> mint green it is </span> Due to an intervention at the Government Online Centre, Online Search will NOT be available on <strong>Friday 12 July 2024 from 16.00 till Sunday 14 July 2024\n    at 16:00.</strong> We apologise for all inconveniences.",
+      "text": "",
       "dateFrom": "2025-01-28T07:55:42.049Z",
       "dateTo": "2025-02-09T11:30:33.049Z",
       "textColor": "black",
@@ -17,6 +17,15 @@
         },
         "cookie": {
           "name": "analytics"
+        }
+      },
+      {
+        "header": {
+          "title": "Marketing",
+          "subtitle": "Marketing cookies are used to track visitors across the website to allow publishers, notably Youtube and Google, to display relevant and engaging content. By enabling marketing cookies, you grant permission for track your user behaviour, collect and share certain information."
+        },
+        "cookie": {
+          "name": "marketing"
         }
       }
     ],
