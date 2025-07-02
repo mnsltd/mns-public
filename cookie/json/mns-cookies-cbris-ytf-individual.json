@@ -1,15 +1,18 @@
 {
   "data": {
     "announcementBannerConfig": {
-      "text": "",
-      "dateFrom": "2025-01-28T07:55:42.049Z",
-      "dateTo": "2025-02-09T11:30:33.049Z",
+      "text": "<p>We wish to inform you that the online payment platform for trade fees currently supports transactions only using National ID (NID) numbers.</p>
+    <p>At this time, the system does not support payments using passport numbers. Therefore, non-citizens are required to make all trade fee payments in person at the CBRD office until further notice.</p>
+    <p>We acknowledge the inconvenience this may cause and sincerely appreciate your patience, understanding, and cooperation.</p>",
+      "dateFrom": "2025-07-01T07:55:42.049Z",
+      "dateTo": "2025-07-13T11:30:33.049Z",
       "textColor": "black",
       "bgColorPrimary": "red",
-      "bgColorSecondary": "white"
+      "bgColorSecondary": "purple"
     },
-    "primaryColor": "#388e3c",
+    "primaryColor": "#1579aa",
     "preferences": [
+
     ],
     "buttonConfig": {
       "headerButtons": [

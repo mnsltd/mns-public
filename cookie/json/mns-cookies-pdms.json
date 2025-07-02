@@ -8,9 +8,7 @@
       "bgColorPrimary": "red",
       "bgColorSecondary": "white"
     },
-    "primaryColor": "#388e3c",
-    "preferences": [
-    ],
+    "primaryColor": "#1879ac",  
     "buttonConfig": {
       "headerButtons": [
         {
