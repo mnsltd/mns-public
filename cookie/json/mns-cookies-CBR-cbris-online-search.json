@@ -6,8 +6,8 @@
 			"dateFrom": "2025-08-24T18:00:00.000Z",
 			"dateTo": "2025-09-14T05:00:00.000Z",
 			"bgColorPrimary": "#ff6b35",
-			"bgColorSecondary": "#ffcc00",
-			"textColor": "#2c1810"
+			"textColor": "#2c1810",
+			"bgColorSecondary": "#ffcc00"
 		}
 	}
 }
