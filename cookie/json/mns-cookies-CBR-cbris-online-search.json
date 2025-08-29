@@ -2,12 +2,12 @@
 	"data": {
 		"primaryColor": "#0c4467",
 		"announcementBannerConfig": {
-			"text": "Dear Valued Customer, <br>We would like to inform you of the following planned intervention on our IT Infrastructure, during which cbris online systems and services , will not be accessible:<br><br>i)\tFrom Saturday 6th September, 23:00 to Sunday 7th September, 05:00<br>ii)\tFrom Saturday 13th September, 23:00 to Sunday 14th September, 05:00<br> <br>We apologise for any inconvenience these downtimes may cause.<br>",
+			"text": "<b style='font-size: 18px; color: #a00417'>Important communique</b><br><br>Dear Valued Customer,<br>We would like to inform you of the following planned intervention on our IT Infrastructure, during which cbris online systems and services,<br> <b>will not be accessible</b>:<br><br>i)\tFrom <b>Saturday 6th September, 23:00 to Sunday 7th September, 05:00</b><br>ii)\tFrom <b>Saturday 13th September, 23:00 to Sunday 14th September, 05:00</b><br><br>We apologise for any inconvenience these downtimes may cause.<br>",
 			"dateFrom": "2025-08-24T18:00:00.000Z",
 			"dateTo": "2025-09-14T05:00:00.000Z",
-			"bgColorPrimary": "#ff6b35",
-			"textColor": "#2c1810",
-			"bgColorSecondary": "#ffcc00"
+			"bgColorPrimary": "#f9f9f9",
+			"bgColorSecondary": "#f9f9f9",
+			"textColor": "#111111"
 		}
 	}
 }
