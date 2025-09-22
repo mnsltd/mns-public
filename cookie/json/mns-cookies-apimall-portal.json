@@ -1,0 +1,45 @@
+{
+  "data": {
+    "announcementBannerConfig": {
+      "text": "Please be aware that this is a UAT environment. If you are using real data from APIMALL, any updates to the release version of this environment may result in data loss.",
+      "textColor": "white",
+      "bgColorPrimary": "orange",
+      "bgColorSecondary": "orangered",
+      "enableAnimation": true,
+      "displayOnHosts": [
+        "preprod-apimallportal.mns.mu",
+        "https://preprod-apimallportal.mns.mu"
+      ]
+    },
+    "primaryColor": "#007508",
+    "buttonConfig": {
+      "headerButtons": [
+        {
+          "text": "Review",
+          "id": "customize-btn",
+          "class": ["customize-btn"],
+          "type": "customize"
+        },
+        {
+          "text": "Reject All",
+          "id": "reject-btn",
+          "class": ["reject-btn"],
+          "type": "reject-all"
+        },
+        {
+          "text": "Accept All",
+          "id": "accept-btn",
+          "class": ["accept-btn"],
+          "type": "accept-all"
+        }
+      ],
+      "footerButtons": [
+        {
+          "text": "Save Preferences",
+          "type": "save-preference",
+          "class": ["cky-btn-preferences"]
+        }
+      ]
+    }
+  }
+}
