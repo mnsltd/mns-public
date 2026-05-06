@@ -2,9 +2,9 @@
 	"data": {
 		"primaryColor": "#0c4467",
 		"announcementBannerConfig": {
-			"text": "<b style='font-size: 18px; color: #a00417'>Important communique</b><br><br>Please be informed that due to a general maintenance on our IT Infrastructure, this website as well as our CBRIS Search APIs, will not be available from <strong> Saturday 7th March 22:00 to Sunday 8th March 05:00. </strong> We apologise for any inconvenience this downtime may cause.<br>",
-			"dateFrom": "2026-02-26T18:00:00.000Z",
-			"dateTo": "2026-03-08T01:00:00.000Z",
+			"text": "<b style='font-size: 18px; color: #a00417'>Important communique</b><br><br>Please be informed that due to a general maintenance on our IT Infrastructure, this website as well as our CBRIS Search APIs, will not be available from <strong> Saturday 9th May 19:00 to Sunday 10th May 05:00. </strong> We apologise for any inconvenience this downtime may cause.<br>",
+			"dateFrom": "2026-05-06T00:00:00.000Z",
+			"dateTo": "2026-05-10T01:00:00.000Z",
 			"bgColorPrimary": "#f9f9f9",
 			"bgColorSecondary": "#f9f9f9",
 			"textColor": "#111111"
