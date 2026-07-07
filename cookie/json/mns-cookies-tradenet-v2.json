@@ -1,0 +1,57 @@
+{
+  "data": {
+    "primaryColor": "#09202E",
+    "secondaryColor": "#22D081",
+    "preferences": [],
+    "cookieHeader": {
+      "mainHeader": {
+        "title": "This website uses Cookies.",
+        "subtitle": "We have put some small files called cookies on your device to make our website work and to improve your user experience. As a result, we may collect and process your site usage data. Let us know what cookies you allow. We will use a cookie to save your choice. You can read more about our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Cookie-Policy.pdf\">Cookie Policy</a>."
+      },
+      "consentPreferenceHeader": {
+        "title": "Customize Consent Preferences",
+        "subtitle": "By accepting, you consent to the use of the selected cookies as described in our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Cookie-Policy.pdf\">Cookie Policy</a>. Learn more about how we process your data in our <a href=\"https://mns.mu/wp-content/uploads/2024/07/DC0-MNS_Privacy-Notice.pdf\">Privacy Notice</a>."
+      },
+      "necessaryCookie": {
+        "title": "Strictly necessary/ Essential cookies",
+        "subtitle": "Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data."
+      }
+    },
+    "buttonConfig": {
+      "headerButtons": [
+        {
+          "text": "Review",
+          "id": "customize-btn",
+          "class": ["customize-btn"],
+          "type": "customize"
+        },
+        {
+          "text": "Accept All",
+          "id": "accept-btn",
+          "class": ["accept-btn"],
+          "type": "accept-all"
+        }
+      ],
+      "footerButtons": [
+        {
+          "text": "Reject All",
+          "id": "reject-btn",
+          "class": ["reject-btn"],
+          "type": "reject-all"
+        },
+        {
+          "text": "Save Preferences",
+          "id": "save-preference-btn",
+          "class": ["cky-btn-preferences"],
+          "type": "save-preference"
+        },
+        {
+          "text": "Accept All",
+          "id": "accept-btn-footer",
+          "class": ["accept-btn"],
+          "type": "accept-all"
+        }
+      ]
+    }
+  }
+}
