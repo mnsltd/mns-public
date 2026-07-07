@@ -2,41 +2,7 @@
   "data": {
     "primaryColor": "#09202E",
     "secondaryColor": "#22D081",
-    "preferences": [
-      {
-        "header": {
-          "title": "Functional",
-          "subtitle": "Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features."
-        },
-        "cookie": {
-          "name": "functional",
-          "expiryInDays": 90
-        },
-        "required": true
-      },
-      {
-        "header": {
-          "title": "Analytics",
-          "subtitle": "Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc."
-        },
-        "cookie": {
-          "name": "analytics",
-          "expiryInDays": 90
-        },
-        "checked": true
-      },
-      {
-        "header": {
-          "title": "Test",
-          "subtitle": "Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc."
-        },
-        "cookie": {
-          "name": "test",
-          "expiryInDays": 90
-        },
-        "descriptionText": "This cookie is set by the Google recaptcha service to identify bots to protect the website against malicious spam attacks."
-      }
-    ],
+    "preferences": [],
     "cookieHeader": {
       "mainHeader": {
         "title": "This website uses Cookies.",
