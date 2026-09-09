@@ -2,9 +2,9 @@
 	"data": {
 		"primaryColor": "#0c4467",
 		"announcementBannerConfig": {
-			"text": "<b style='font-size: 18px; color: #a00417'>Important communique</b><br><br>Please be informed that due to a general maintenance on our IT Infrastructure, this website as well as our CBRIS Search APIs, will not be available from <strong> Saturday 9th May 19:00 to Sunday 10th May 05:00. </strong> We apologise for any inconvenience this downtime may cause.<br>",
-			"dateFrom": "2026-05-06T00:00:00.000Z",
-			"dateTo": "2026-05-10T01:00:00.000Z",
+			"text": "<b style='font-size: 18px; color: #a00417'>Important communique</b><br><br><b style='font-size: 18px;'>Migration of the Online Search website to a new domain</b><br><br>Please take note of the following important dates and changes:<ul><li><strong>Effective June 18, 2026:</strong> This website will officially move to its new address: <br><a href='https://onlinesearch.mns.global' target='_blank'>https://onlinesearch.mns.global</a>. You can begin using the new URL from this date.</li><li><strong>Effective July 31, 2026:</strong> The current (old) URL will be permanently decommissioned and will <strong>no longer be accessible.</strong></li></ul><br><strong>Note:</strong><br>If you access this platform via any saved links or corporate bookmarks, please update them to the new URL <br>(<a href='https://onlinesearch.mns.global' target='_blank'>https://onlinesearch.mns.global</a>) before July 31st.",
+			"dateFrom": "2026-06-16T00:00:00.000Z",
+			"dateTo": "2026-07-31T23:59:59.000Z",
 			"bgColorPrimary": "#f9f9f9",
 			"bgColorSecondary": "#f9f9f9",
 			"textColor": "#111111"
