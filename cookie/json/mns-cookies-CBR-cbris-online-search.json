@@ -4,7 +4,7 @@
 		"announcementBannerConfig": {
 			"text": "<b style='font-size: 18px; color: #a00417'>Important communique</b><br><br>Please be informed that due to a general maintenance on our IT Infrastructure, this website as well as our CBRIS Search APIs, will not be available on <strong>Saturday 14th November, from 23:00 to 23:30.</strong> We apologise for any inconvenience this downtime may cause.<br><br>MNS Team<br>06.11.2026",
 			"dateFrom": "2026-11-06T00:00:00.000Z",
-			"dateTo": "2026-11-14T19:30:00.000Z",
+			"dateTo": "2026-11-14T20:00:00.000Z",
 			"bgColorPrimary": "#f9f9f9",
 			"bgColorSecondary": "#f9f9f9",
 			"textColor": "#111111"
